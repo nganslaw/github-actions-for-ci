@@ -16,6 +16,10 @@ jobs:
         run: |
           npm install
           npm run build
+      - uses: actions/upload-artifacts@main
+        with:
+          name: webpack actions/upload-artifacts
+          path: public/
   test:
 
     runs-on: ubuntu-latest
